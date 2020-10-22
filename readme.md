@@ -48,5 +48,5 @@ public class MqOperateLogService implements OperateLogService {
 }
 ```
 
-在这边大家一定不能把**@Primary**注解加到我们的实现的类上，否则会导致启动报错。
+在这边大家一定要把**@Primary**注解加到我们的实现的类上，否则会导致启动报错。
 
