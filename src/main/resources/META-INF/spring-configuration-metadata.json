@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "name": "log.aspectJ.expression",
+      "type": "java.lang.String",
+      "description": "日志拦截的表达式",
+      "defaultValue": ""
+    },
+    {
+      "name": "log.aspectJ.database",
+      "type": "java.lang.Boolean",
+      "description": "日志是否开启数据库记录标志，true为开启，false为未开启",
+      "defaultValue": false
+    },
+    {
+      "name": "log.aspectJ.enable",
+      "type": "java.lang.Boolean",
+      "description": "日志是否开启的标志，true为开启，false为未开启",
+      "defaultValue": false
+    }
+  ]
+}
