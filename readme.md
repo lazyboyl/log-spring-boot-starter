@@ -20,7 +20,7 @@
 | 属性  | 默认值 | 说明 
 |---|---|---
 |log.aspectJ.enable|false|true：开启日志监控，false：关闭日志监控
-|log.aspectJ.expression|无|aop扫描的包的位置，具体可以参照下面的例子的配置，此处的配置和aop的配置一样
+|log.aspectJ.expression|无|aop扫描的包的位置，具体可以参照下面的例子的配置，此处的配置和aop的配置一样，若此处有多个扫描的路径，则使用双竖线来作为分隔符来进行处理
 |log.aspectJ.database|false|默认不开启数据库信息的记录，若想要将请求的日志保存到数据库需要执行doc文件夹底下的t_aop_log.sql。
 
 #### 3、在配置类中配置日志
