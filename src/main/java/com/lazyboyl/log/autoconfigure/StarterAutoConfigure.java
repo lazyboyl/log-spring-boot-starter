@@ -4,16 +4,13 @@ import com.lazyboyl.log.config.AdapterServiceAdvisor;
 import com.lazyboyl.log.config.AdapterServiceMonitorInterceptor;
 import com.lazyboyl.log.scanner.LogScannerRegister;
 import com.lazyboyl.log.service.OperateLogService;
-import com.lazyboyl.log.service.impl.DbOperateLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnSingleCandidate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.Ordered;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  * @author linzf
@@ -27,7 +24,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
         name = "enable",
         havingValue = "true"
 )
-public class StarterAutoConfigure {
+public class StarterAutoConfigure  {
 
     @Value("${log.aspectJ.expression}")
     private String expression;

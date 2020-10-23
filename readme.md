@@ -37,8 +37,7 @@ log.aspectJ.database=true
 OperateLogService接口来实现我们的自定义日志收集功能，示例代码如下：
 
 ```java
-@Service
-@Primary
+@OperateLogCoverService
 public class MqOperateLogService implements OperateLogService {
 
     @Override
@@ -48,5 +47,5 @@ public class MqOperateLogService implements OperateLogService {
 }
 ```
 
-在这边大家一定要把**@Primary**注解加到我们的实现的类上，否则会导致启动报错。
+在这边大家一定要把**@OperateLogCoverService**注解加到我们的实现的类上，否则不会执行我们实现的方法
 

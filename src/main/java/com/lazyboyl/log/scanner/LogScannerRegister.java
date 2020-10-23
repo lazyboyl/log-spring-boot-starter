@@ -42,4 +42,5 @@ public class LogScannerRegister implements ImportBeanDefinitionRegistrar, Enviro
         scanner.doScan("com.lazyboyl.log");
     }
 
+
 }
